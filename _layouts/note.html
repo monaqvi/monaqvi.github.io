@@ -1,0 +1,29 @@
+---
+layout: default
+notes: active
+---
+
+<div class="notes">
+  <div>
+    <h1>{{ page.title }}</h1>
+    
+    <h2><info datetime="{{ page.date }}">
+      {{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
+    </info></h2>
+    <!-- Post content -->
+    <div>
+      {{ content }}
+    </div>
+    <!-- Post info -->
+    <div>
+    <!-- include some categories and tags maybe? -->
+    </div>
+
+    <hr>
+
+    <!-- Post comments -->
+    <div>
+      {% include disqus.html %}  
+    </div>
+  </div><!-- / .note .single -->
+</div><!-- /.notes -->

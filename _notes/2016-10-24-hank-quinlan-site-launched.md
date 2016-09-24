@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: note
 title: "Hank Quinlan, Horrible Cop, Launches Site"
 date: 2016-10-24
 ---

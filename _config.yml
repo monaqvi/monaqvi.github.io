@@ -1,5 +1,7 @@
 name: Muhammad Naqvi
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /notes/:year/:month/:day/:title
+google_analytics: UA-84700556-1
 gems:
   - jekyll-sitemap
+  - jemoji

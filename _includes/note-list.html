@@ -1,0 +1,7 @@
+<div class="notelist">
+    {% for note in site.notes %}
+    <ul class="listnotes list-unstyled">
+      <li><span>{{ note.date | date_to_string }} &raquo;</span> <a href="{{ note.url }}">{{ note.title }}</a></li>
+    </ul>
+    {% endfor %}
+</div>
