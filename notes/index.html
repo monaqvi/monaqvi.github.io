@@ -14,6 +14,9 @@ description: My notes and scribbles
   <div class="content">
     {{ post.content }}
   </div>
+  <div>
+    <a href="{{ post.url }}#disqus_thread"></a>
+  </div>
 {% endfor %}
 
 <!-- Pagination links -->
@@ -30,3 +33,5 @@ description: My notes and scribbles
     <span class="next ">Next</span>
   {% endif %}
 </div>
+
+<script id="dsq-count-scr" src="//monaqvi.disqus.com/count.js" async></script>
