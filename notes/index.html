@@ -17,21 +17,19 @@ description: My notes and scribbles
         </info>
       </p>
       <p class="post-meta">
-        Under
-          <a class="post-category" href="#">CSS</a>
+        Under<a class="post-category" href="#">CSS</a>
       </p>
     </header>
     <div class="post-description">
       <div class="post-images pure-g">
         <div class="pure-u-1 pure-u-md-1-1">
-          <a href="http://www.flickr.com/photos/uberlife/8915936174/">
-          <img alt="Photo of someone working poolside at a resort"
-            class="pure-img-responsive"
-            src="http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg">
+          <a href="{{ post.url }}">
+          <img class="pure-img-responsive"
+            src="{{ post.image }}">
           </a>
         </div>
       </div>
-      <p>{{ post.content }}</p>
+      <p>{{ post.description }}</p>
     </div>
     <p class="post-meta">
       Tagged
