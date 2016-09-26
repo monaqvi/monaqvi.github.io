@@ -3,7 +3,7 @@ layout: default
 notes: active
 ---
 
-<div class="notes">
+<div>
   <div>
     <h1>{{ page.title }}</h1>
     
@@ -16,15 +16,10 @@ notes: active
     </div>
     <!-- Post info -->
     <div>
-    <!-- include some categories and tags maybe? -->
-    </div>
-
-    <hr>
-
-
+      <!-- Categories-->
       {% unless page.categories == empty %}
-      <ul class="tag_box list-unstyled list-inline">
-        <li><i class="fa fa-folder-open"></i></li>
+      <ul>
+        <li><i></i></li>
         {% assign categories_list = page.categories %}
         {% if categories_list.first[0] == null %}
         {% for category in categories_list %} 
@@ -41,12 +36,12 @@ notes: active
         {% endfor %}
         {% endif %}
       </ul>
-      {% endunless %}  
+      {% endunless %}
 
-
+      <!-- Tags -->
       {% unless page.tags == empty %}
-      <ul class="list-inline">
-        <li><i class="fa fa-tags"></i></li>
+      <ul>
+        <li><i></i></li>
         {% assign tags_list = page.tags %}
         {% if tags_list.first[0] == null %}
         {% for tag in tags_list %} 
@@ -71,13 +66,11 @@ notes: active
         {% assign tags_list = nil %}
       </ul>
       {% endunless %} 
-
-
-    <hr>
+    </div>
 
     <!-- Post comments -->
     <div>
       {% include disqus.html %}  
     </div>
-  </div><!-- / .note .single -->
-</div><!-- /.notes -->
+  </div>
+</div>
