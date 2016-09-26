@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>Blog &ndash; Layout Examples &ndash; Pure</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="/css/blog.css">
+  </head>
+  <body>
+    <div id="layout" class="pure-g">
+      <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+          <h1 class="brand-title">Some notes</h1>
+          <h2 class="brand-tagline">
+            <span class="avoidwrap">I took that I thought</span>
+            <span class="avoidwrap">were noteworthy</span>
+          </h2>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="pure-button" href="./categories">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="pure-button" href="./tags">Tags</a>
+              </li>
+              <li class="nav-item">
+                <a class="pure-button" href="/">My website</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+          <!-- A wrapper for all the blog posts -->
+          <div class="posts">
+            <h1 class="content-subhead">Recent Posts</h1>
+            <!-- A single blog post -->
+            {{ content }}
+          </div>
+          <div class="footer">
+            <div class="pure-menu pure-menu-horizontal">
+              <ul>
+                <li class="pure-menu-item">
+                  <a href="https://github.com/monaqvi/monaqvi.github.io/tree/master/_posts" class="pure-menu-link">
+                  Want to make any edits? This blog is open-source on GitHub!
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script id="dsq-count-scr" src="//monaqvi.disqus.com/count.js" async></script>
+</html>
