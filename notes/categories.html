@@ -8,27 +8,6 @@ title: Categories
     <div class="pure-u-1">
       <div class="tabordion">
         {% assign categories_list = site.categories %}
-        {% if categories_list.first[0] == null %}
-          {% for category in categories_list %}
-            <div>
-              <input type="radio" name="sections" id="{{ category }}">
-              <label for="{{ category }}">{{ category  | capitalize }} <span>({{ site.categories[category].size }})</span></label>
-              <article>
-                <!-- <h2 class="post-title post-no-top-margin">Posts in {{ category | capitalize }}</h2> -->
-                <ul class="posts-list">
-                {% assign pages_list = site.categories[category] %}
-                  {% for node in pages_list %}
-                    {% if node.title != null %}
-                      {% if group == null or group == node.group %}
-                        <li><a href="{{ site.BASE_PATH }}{{node.url}}">{{node.title}}</a> <span>- {{ node.date | date: "%B %d, %Y" }}</span></li>
-                      {% endif %}
-                    {% endif %}
-                  {% endfor %}
-                </ul>
-              </article>
-            </div>
-          {% endfor %}
-        {% else %}
           {% for category in categories_list %}
             <div>
               <input type="radio" name="sections" id="{{ category[0] | replace:' ','-' }}">
@@ -49,7 +28,6 @@ title: Categories
               </article>
             </div>
           {% endfor %}
-        {% endif %}
         {% assign categories_list = nil %}
       </div>
     </div>
