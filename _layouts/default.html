@@ -5,19 +5,12 @@
 	
 	<body>
 		<div>
-			
-			{% include header.html %}
-			
 			{{ content }}
-			
+
 			{% include footer.html %}
-		
+
 		</div>
 	</body>
 
 	{% include scripts.html %}
-	{% if jekyll.environment == 'production' %}
-	{% include analytics.html %}
-	{% endif %}
-
 </html>

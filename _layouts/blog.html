@@ -1,62 +1,39 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
-    <title>Blog &ndash; Layout Examples &ndash; Pure</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/blog/css/style.css">
-  </head>
-  <body>
-    <div id="layout" class="pure-g">
-      <nav class="sidebar pure-u-1 pure-u-md-1-4">
-        <div class="header">
-          <h1 class="brand-title">Some notes</h1>
-          <h2 class="brand-tagline">
-            <span class="avoidwrap">that I thought</span>
-            <span class="avoidwrap">were noteworthy</span>
-          </h2>
-          <nav class="nav">
-            <ul class="nav-list">
-              <span class="avoidwrap">
-                <li class="nav-item">
-                  <a class="pure-button" href="/notes/categories">Categories</a>
-                </li>
-                <li class="nav-item">
-                  <a class="pure-button" href="/notes/tags">Tags</a>
-                </li>
-              </span>
-              <span>
-                <li class="nav-item">
-                  <a class="pure-button" href="/notes/">Notes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="pure-button" href="/">Home</a>
-                </li>
-              </span>
-            </ul>
-          </nav>
-        </div>
-      </nav>
-      <main class="content pure-u-1 pure-u-md-3-4">
-        <div>
-          <!-- A wrapper for all the content -->
-          {{ content }}
-          <footer class="pure-menu pure-menu-horizontal footer">
-            <a href="https://github.com/monaqvi/monaqvi.github.io/tree/master/_posts">
-            This blog is open-source on GitHub!
-            </a>
-          </footer>
-        </div>
-      </main>
-    </div>
-  </body>
-  <script id="dsq-count-scr" src="//monaqvi.disqus.com/count.js" async></script>
-</html>
+---
+layout: default
+---
+<nav class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    <h1 class="brand-title">Some notes</h1>
+    <h2 class="brand-tagline">
+      <span class="avoidwrap">that I thought</span>
+      <span class="avoidwrap">were noteworthy</span>
+    </h2>
+    <nav class="nav">
+      <ul class="nav-list">
+        <span class="avoidwrap">
+          <li class="nav-item">
+            <a class="pure-button" href="/notes/categories">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="pure-button" href="/notes/tags">Tags</a>
+          </li>
+        </span>
+        <span>
+          <li class="nav-item">
+            <a class="pure-button" href="/notes/">Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="pure-button" href="/">Home</a>
+          </li>
+        </span>
+      </ul>
+    </nav>
+  </div>
+</nav>
+<main class="content pure-u-1 pure-u-md-3-4">
+  <div>
+    <!-- A wrapper for all the content -->
+    {{ content }}
+  </div>
+</main>
+<script id="dsq-count-scr" src="//monaqvi.disqus.com/count.js" async></script>
