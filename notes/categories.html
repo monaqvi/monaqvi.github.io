@@ -6,27 +6,35 @@ title: Categories
   <h1 class="content-subhead">Categories</h1>
   <div class="pure-g">
     <div class="pure-u-1 pure-u-sm-1-4">
-      <ul>
+      <div class="tabordion">
         {% assign categories_list = site.categories %}
         {% if categories_list.first[0] == null %}
           {% for category in categories_list %}
-            <li>
-              <a href="#{{ category | replace:' ','-' }}-ref">
-                {{ category | capitalize }} <span>{{ site.categories[category].size }}</span>
-              </a>
-            </li>
+          <section>
+            <input type="radio" name="sections" id="{{ category }}" checked>
+            <label for="{{ category }}">{{ category  | capitalize }}<span>{{ site.categories[category].size }}</span></label>
+            <article>
+              <h2>John Lennon</h2>
+              <p>John Ono Lennon, (born John Winston Lennon; 9 October 1940 – 8 December 1980), was an English musician, singer and songwriter who rose to worldwide fame as a founder member of the rock band the Beatles, the most commercially successful band in the history of popular music. With Paul McCartney, he formed a songwriting partnership that is one of the most celebrated of the 20th century.</p>
+              <p>Born and raised in Liverpool, as a teenager Lennon became involved in the skiffle craze; his first band, the Quarrymen, evolved into the Beatles in 1960. When the group disbanded in 1970, Lennon embarked on a solo career that produced the critically acclaimed albums John Lennon/Plastic Ono Band and Imagine, and iconic songs such as "Give Peace a Chance" and "Working Class Hero". After his marriage to Yoko Ono in 1969, he changed his name to John Ono Lennon. Lennon disengaged himself from the music business in 1975 to raise his infant son Sean, but re-emerged with Ono in 1980 with the new album Double Fantasy. He was murdered three weeks after its release.</p>
+            </article>
+          </section>
           {% endfor %}
         {% else %}
           {% for category in categories_list %}
-            <li>
-              <a href="#{{ category[0] | replace:' ','-' }}-ref">
-                {{ category[0] | capitalize }} <span>{{ category[1].size }}</span>
-              </a>
-            </li>
+          <section>
+            <input type="radio" name="sections" id="{{ category[0] | replace:' ','-' }}" checked>
+            <label for="{{ category[0] | replace:' ','-' }}">{{ category[0] | capitalize }} <span>{{ category[1].size }}</span></label>
+            <article>
+              <h2>John Lennon</h2>
+              <p>John Ono Lennon, (born John Winston Lennon; 9 October 1940 – 8 December 1980), was an English musician, singer and songwriter who rose to worldwide fame as a founder member of the rock band the Beatles, the most commercially successful band in the history of popular music. With Paul McCartney, he formed a songwriting partnership that is one of the most celebrated of the 20th century.</p>
+              <p>Born and raised in Liverpool, as a teenager Lennon became involved in the skiffle craze; his first band, the Quarrymen, evolved into the Beatles in 1960. When the group disbanded in 1970, Lennon embarked on a solo career that produced the critically acclaimed albums John Lennon/Plastic Ono Band and Imagine, and iconic songs such as "Give Peace a Chance" and "Working Class Hero". After his marriage to Yoko Ono in 1969, he changed his name to John Ono Lennon. Lennon disengaged himself from the music business in 1975 to raise his infant son Sean, but re-emerged with Ono in 1980 with the new album Double Fantasy. He was murdered three weeks after its release.</p>
+            </article>
+          </section>
           {% endfor %}
         {% endif %}
         {% assign categories_list = nil %}
-      </ul>
+      </div>
     </div>
 <!-- Tab panes -->
     <div class="pure-u-1 pure-u-sm-3-4">
