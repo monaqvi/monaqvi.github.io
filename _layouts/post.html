@@ -4,10 +4,12 @@ layout: blog
 <div>
   <div>
     <h1>{{ page.title }}</h1>
-    
-    <h2><info datetime="{{ page.date }}">
-      {{ page.date | date_to_string }}
-    </info></h2>
+    <h2>{{ page.description }}</h2>
+    <h1 class="content-subhead">
+      <info datetime="{{ page.date }}">
+        {{ page.date | date_to_string }}
+      </info>
+    </h1>
     <!-- Post content -->
     <div>
       {{ content }}
