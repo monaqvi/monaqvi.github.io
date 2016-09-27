@@ -17,19 +17,20 @@ layout: blog
     <!-- Post info -->
     <div>
       <!-- Categories-->
-      <p class="post-meta">
+      <p>
+      <i class="fa fa-folder-open" aria-hidden="true"></i>
       {% unless page.categories == empty %}
         {% assign categories_list = page.categories %}
         {% if categories_list.first[0] == null %}
         {% for category in categories_list %} 
-          <a class="post-category" href="/notes/category#{{ category }}-ref">
+          <a href="/notes/category#{{ category }}-ref">
             {{ category | join: "/" }} <span>({{ site.categories[category].size }})</span>
             {% unless forloop.last %},{% endunless %}
           </a>
         {% endfor %}
         {% else %}
         {% for category in categories_list %} 
-          <a class="post-category" href="/notes/category#{{ category[0] }}-ref">
+          <a href="/notes/category#{{ category[0] }}-ref">
             {{ category[0] | join: "/" }} <span>/{{ category[1].size }})</span>
           </a>
         {% endfor %}
@@ -38,7 +39,8 @@ layout: blog
       </p>
 
       <!-- Tags -->
-      <p class="post-meta">
+      <p>
+      <i class="fa fa-tags" aria-hidden="true"></i>
       {% unless page.tags == empty %}
         {% assign tags_list = page.tags %}
         {% if tags_list.first[0] == null %}
