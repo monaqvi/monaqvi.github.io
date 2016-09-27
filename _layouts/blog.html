@@ -15,7 +15,7 @@
   </head>
   <body>
     <div id="layout" class="pure-g">
-      <div class="sidebar pure-u-1 pure-u-md-1-4">
+      <nav class="sidebar pure-u-1 pure-u-md-1-4">
         <div class="header">
           <h1 class="brand-title">Some notes</h1>
           <h2 class="brand-tagline">
@@ -43,24 +43,20 @@
             </ul>
           </nav>
         </div>
-      </div>
-      <div class="content pure-u-1 pure-u-md-3-4">
+      </nav>
+      <main class="content pure-u-1 pure-u-md-3-4">
         <div>
           <!-- A wrapper for all the content -->
           {{ content }}
-          <div class="footer">
+          <footer class="footer">
             <div class="pure-menu pure-menu-horizontal">
-              <ul>
-                <li class="pure-menu-item">
-                  <a href="https://github.com/monaqvi/monaqvi.github.io/tree/master/_posts" class="pure-menu-link">
-                  Want to make any edits? This blog is open-source on GitHub!
-                  </a>
-                </li>
-              </ul>
+              <a href="https://github.com/monaqvi/monaqvi.github.io/tree/master/_posts" class="pure-menu-link">
+              Want to make any edits? This blog is open-source on GitHub!
+              </a>
             </div>
-          </div>
+          </footer>
         </div>
-      </div>
+      </main>
     </div>
   </body>
   <script id="dsq-count-scr" src="//monaqvi.disqus.com/count.js" async></script>

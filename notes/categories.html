@@ -2,7 +2,7 @@
 layout: default
 title: Categories
 ---
-<div>
+<section>
   <ul>
     {% assign categories_list = site.categories %}
     {% if categories_list.first[0] == null %}
@@ -24,9 +24,9 @@ title: Categories
     {% endif %}
     {% assign categories_list = nil %}
   </ul>
-</div>
+</section>
 <!-- Tab panes -->
-<div>
+<section>
   {% for category in site.categories %}
     <div id="{{ category[0] | replace:' ','-' }}-ref">
       <h2>Posts in {{ category[0] | capitalize }}</h2>
@@ -43,4 +43,4 @@ title: Categories
       </ul>
     </div>
   {% endfor %}
-</div>
+</section>
