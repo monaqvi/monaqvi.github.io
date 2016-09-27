@@ -1,9 +1,23 @@
 <head>
   <meta charset="utf-8">
-
-  <title>Mo Naqvi</title>
-  <meta name="description" content="I came here to drink milk and code, and I just finished my milk." />
-  <meta name="keywords" content="freelancer developer human" />
+  {% if page.title %}
+  {% assign title = page.title %}
+  {% else %}
+  {% assign title = layout.title %}
+  {% endif %}
+  {% if page.decription %}
+  {% assign description = page.description %}
+  {% else %}
+  {% assign description = layout.description %}
+  {% endif %}
+  {% if page.decription %}
+  {% assign tags = page.tags %}
+  {% else %}
+  {% assign tags = layout.tags %}
+  {% endif %}
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+  <meta name="keywords" content="{{ tags | join: ', ' }}" />
   <meta name="author" content="Muhammad Naqvi">
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon"/>
 
@@ -11,18 +25,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="Mo Naqvi">
-  <meta itemprop="description" content="Developer | Freelancer | Human">
+  <meta itemprop="name" content="{{ title }}">
+  <meta itemprop="description" content="{{ description }}">
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="product">
-  <meta name="twitter:title" content="Mo Naqvi">
-  <meta name="twitter:description" content="Developer | Freelancer | Human">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
   <!-- <meta name="twitter:image" content="THUMBNAIL PIC HERE"> -->
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Developer | Freelancer | Human" />
-  <meta property="og:site_name" content="Mo Naqvi" />
+  <meta property="og:page_name" content="{{ title }}" />
+  <meta property="og:title" content="{{ description }}" />
 
   <!-- Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -34,5 +48,16 @@
   <![endif]-->
   <!--[if gt IE 8]><!-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
-  <link rel="stylesheet" href="/assets/blog/css/style.css">
+  {% assign title = nil %}
+  {% assign description = nil %}
+  {% assign tags = nil %}
+
+
+  {% if page.css %}
+  {% assign custom_css = page.css %}
+  {% else %}
+  {% assign custom_css = layout.css %}
+  {% endif %}
+  <link rel="stylesheet" href="{{ custom_css }}">
+  {% assign custom_css = nil %}
 </head>
