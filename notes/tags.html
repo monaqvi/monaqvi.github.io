@@ -15,7 +15,7 @@ title: Tags
         {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
         <div>
           <input type="radio" name="sections" id="{{ this_word }}">
-          <label for="{{ this_word }}">{{ this_word  | capitalize }}<span>({{ site.tags[this_word].size }})</span></label>
+          <label for="{{ this_word }}">{{ this_word  | capitalize }} <span>({{ site.tags[this_word].size }})</span></label>
           <article>
             <!-- <h2 class="post-title post-no-top-margin">Posts in {{ this_word | capitalize }}</h2> -->
             <ul class="posts-list">

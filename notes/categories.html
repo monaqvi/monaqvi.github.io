@@ -12,7 +12,7 @@ title: Categories
           {% for category in categories_list %}
             <div>
               <input type="radio" name="sections" id="{{ category }}">
-              <label for="{{ category }}">{{ category  | capitalize }}<span>({{ site.categories[category].size }})</span></label>
+              <label for="{{ category }}">{{ category  | capitalize }} <span>({{ site.categories[category].size }})</span></label>
               <article>
                 <!-- <h2 class="post-title post-no-top-margin">Posts in {{ category | capitalize }}</h2> -->
                 <ul class="posts-list">
