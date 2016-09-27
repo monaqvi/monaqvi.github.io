@@ -18,53 +18,42 @@ layout: blog
     <div>
       <!-- Categories-->
       {% unless page.categories == empty %}
-      <ul>
-        <li><i></i></li>
         {% assign categories_list = page.categories %}
         {% if categories_list.first[0] == null %}
         {% for category in categories_list %} 
-          <li><a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category }}-ref">
+          <a href="/notes/category#{{ category }}-ref">
             {{ category | join: "/" }} <span>({{ site.categories[category].size }})</span>
             {% unless forloop.last %},{% endunless %}
-          </a></li>
+          </a>
         {% endfor %}
         {% else %}
         {% for category in categories_list %} 
-          <li><a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category[0] }}-ref">
+          <a href="/notes/category#{{ category[0] }}-ref">
             {{ category[0] | join: "/" }} <span>/{{ category[1].size }})</span>
-          </a></li>
+          </a>
         {% endfor %}
         {% endif %}
-      </ul>
       {% endunless %}
 
       <!-- Tags -->
       {% unless page.tags == empty %}
-      <ul>
-        <li><i></i></li>
         {% assign tags_list = page.tags %}
         {% if tags_list.first[0] == null %}
         {% for tag in tags_list %} 
-          <li>
-            <a href="{{ site.BASE_PATH }}/{{ site.tags_path }}#{{ tag }}-ref">
-            {{ tag }} <span>({{ site.tags[tag].size }})</span>
-            {% unless forloop.last %},{% endunless %}
-            </a>
-          </li>
+          <a href="/notes/tag#{{ tag }}-ref">
+          {{ tag }} <span>({{ site.tags[tag].size }})</span>
+          {% unless forloop.last %},{% endunless %}
+          </a>
         {% endfor %}
         {% else %}
         {% for tag in tags_list %} 
-          <li>
-            <a href="{{ site.BASE_PATH }}/{{ site.tags_path }}#{{ tag[0] }}-ref">
-              {{ tag[0] }} <span>({{ tag[1].size }})</span>
-              {% unless forloop.last %},{% endunless %}
-            </a>
-          </li>
-          
+          <a href="/notes/tag#{{ tag[0] }}-ref">
+            {{ tag[0] }} <span>({{ tag[1].size }})</span>
+            {% unless forloop.last %},{% endunless %}
+          </a>
         {% endfor %}
         {% endif %}
         {% assign tags_list = nil %}
-      </ul>
       {% endunless %} 
     </div>
 
