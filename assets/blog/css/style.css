@@ -101,6 +101,12 @@ h3 {
   color: #222;
   margin-bottom: 0.2em;
 }
+.post-no-top-margin {
+  margin-top: 0em;
+}
+.post-subheader {
+  margin-bottom: 0.2em;
+}
 .post-avatar {
   border-radius: 50px;
   float: right;
