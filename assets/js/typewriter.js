@@ -18,6 +18,7 @@
     'HTML',
     'CSS',
     'Sass',
+    'Go',
     'SWIFT',
     'D3.js',
     'AWS',
@@ -29,10 +30,11 @@
   ];
 
   var numWords = words.length;
+  var timeout;
   var typeSpeed = 100,
       changeSpeed = 1500;
 
-  typewriter(randomWord(), 0);
+  timeout = typewriter(randomWord(), 0);
 
   function randomWord(prev) {
     var next = words[Math.floor(Math.random() * numWords)];
@@ -44,7 +46,7 @@
     var finished = (word === text);
     document.getElementById('change_this').innerHTML = text;
     return setTimeout(function() {
-      typewriter((finished ? randomWord(word) : word), (finished ? 0 : (i + 1)));
+      timeout = typewriter((finished ? randomWord(word) : word), (finished ? 0 : (i + 1)));
       }, (finished ? changeSpeed : typeSpeed)
     );
   }
