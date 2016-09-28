@@ -1,5 +1,6 @@
-(function() {
-  var msgs = [
+
+  var words = [
+    'Javascript',
     'Python',
     'Django',
     'Angular',
@@ -27,25 +28,23 @@
     'problem solving',
   ];
 
-  var numWords = msgs.length;
+  var numWords = words.length;
   var typeSpeed = 100,
       changeSpeed = 1500;
 
-  var randomIndex = function () {
-    return Math.floor(Math.random() * numWords);
+  typewriter(randomWord(), 0);
+
+  function randomWord() {
+    var next = Math.floor(Math.random() * numWords);
+    return words[next];
   };
 
-  var typewriter = function(word, text, i) {
+  function typewriter(word, i) {
+    var text = word.slice(0, i);
+    var finished = (word === text);
     document.getElementById('change_this').innerHTML = text;
-    if (text === word) return;
-    setTimeout(function() { typewriter(word, text + word[i], i + 1) }, typeSpeed);
+    return setTimeout(function() {
+      typewriter((finished ? randomWord() : word), (finished ? 0 : (i + 1)));
+      }, (finished ? changeSpeed : typeSpeed)
+    );
   }
-
-  var changeMsg = function() {
-    var word = msgs[randomIndex()];
-    typewriter(word, '', 0);
-    setTimeout(changeMsg, word.length * typeSpeed + changeSpeed);
-  }
-
-  changeMsg();
-})();
