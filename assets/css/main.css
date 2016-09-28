@@ -294,6 +294,35 @@ a.pure-button-primary {
     border-bottom: 1px solid #e7e7e7;
 }
 
+/*
+ * -- PORTFOLIO --
+ */
+
+ .parallax {
+  width: 100%;
+ }
+
+ .parallax div {
+   position : relative;
+   height : 600px;
+   background-attachment : fixed;
+   background-position : top left;
+   background-size : auto auto;
+   overflow: hidden;
+ }
+
+ .bg__bar {
+   background-image : url(
+     http://i.dailymail.co.uk/i/pix/2009/10/21/article-1221979-06E62A13000005DC-52_306x534.jpg
+   );
+ }
+
+ .bg__baz {
+   background-image : url(
+     http://i.dailymail.co.uk/i/pix/2009/10/21/article-1221979-06E62A13000005DC-52_306x534.jpg
+   ); 
+ }
+
 @media (min-width: 36em) {
   .splash-container {
     background-position: top left 65%;

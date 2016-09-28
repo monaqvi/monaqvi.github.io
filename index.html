@@ -84,7 +84,7 @@ css: /assets/css/main.css
           <ul class="interests-table-list">
             <li>Entrepreneurship</li>
             <li>Data visualization & analysis</li>
-            <li>Cryptocurrencies</li>
+            <li>Financial analysis</li>
             <li>Value investing</li>
             <li>Trading alogrithms</li>
           </ul>
@@ -97,8 +97,8 @@ css: /assets/css/main.css
             <li>Travel (and credit card points)</li>
             <li>Foreign languages</li>
             <li>Lego robotics</li>
-            <li>RadioLab & YC Podcasts</li>
-            <li>Arrested Development</li>
+            <li>Creative problem solving</li>
+            <li>RadioLab & YC podcasts</li>
           </ul>
         </div>
       </div>
@@ -107,69 +107,17 @@ css: /assets/css/main.css
   <div class="l-box-lrg ribbon">
     <h1 class="is-center crunched ribbon shadowed">Some Projects</h1>
   </div>
-  <div class="ribbon l-box-lrg pure-g">
-    <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-      <img class="pure-img-responsive" alt="File Icons" width="300" src="img/common/file-icons.png">
-    </div>
-    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-      <h2 class="content-head content-head-ribbon">iDioma</h2>
-      <p>
-        Learn a foreign language by connecting with native speakers.
-      </p>
+  <div class="ribbon l-box-lrg pure-g crunched">
+    <div class="parallax">
+      <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+        <div class="bg__bar"></div>
+      </div>
+      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+        <h2 class="content-head content-head-ribbon">iDioma</h2>
+        <p>Learn a foreign language by connecting with native speakers.</p>
+      </div>
     </div>
   </div>
 <footer class="dark-ribbon l-box is-center">&copy; Muhammad Naqvi | 2016</footer>
 </main>
-<script type="text/javascript">
-  (function() {
-    var msgs = [
-      'Python',
-      'Django',
-      'Angular',
-      'React',
-      'React Native',
-      'Ionic',
-      'functional programming',
-      'jQuery',
-      'Backbone',
-      'SQL',
-      'Mongo',
-      'Node.js',
-      'milk and cereal',
-      'Github',
-      'HTML',
-      'CSS',
-      'Sass',
-      'SWIFT',
-      'D3.js',
-      'AWS',
-      'investing',
-      'traveling',
-      'collaborating',
-      'learning',
-      'problem solving',
-    ];
-
-    var numWords = msgs.length;
-    var typeSpeed = 100,
-        changeSpeed = 1500;
-
-    var randomIndex = function () {
-      return Math.floor(Math.random() * numWords);
-    };
-
-    var typewriter = function(word, text, i) {
-      document.getElementById('change_this').innerHTML = text;
-      if (text === word) return;
-      setTimeout(function() { typewriter(word, text + word[i], i + 1) }, typeSpeed);
-    }
-
-    var changeMsg = function() {
-      var word = msgs[randomIndex()];
-      typewriter(word, '', 0);
-      setTimeout(changeMsg, word.length * typeSpeed + changeSpeed);
-    }
-
-    changeMsg();
-  })();
-</script>
+<script type="text/javascript" src="/assets/js/typewriter.js"></script>
