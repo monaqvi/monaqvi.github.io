@@ -1,4 +1,4 @@
-
+(function() {
   var words = [
     'Javascript',
     'Python',
@@ -34,9 +34,9 @@
 
   typewriter(randomWord(), 0);
 
-  function randomWord() {
-    var next = Math.floor(Math.random() * numWords);
-    return words[next];
+  function randomWord(prev) {
+    var next = words[Math.floor(Math.random() * numWords)];
+    return (next === prev) ? randomWord(prev) : next;
   };
 
   function typewriter(word, i) {
@@ -44,7 +44,8 @@
     var finished = (word === text);
     document.getElementById('change_this').innerHTML = text;
     return setTimeout(function() {
-      typewriter((finished ? randomWord() : word), (finished ? 0 : (i + 1)));
+      typewriter((finished ? randomWord(word) : word), (finished ? 0 : (i + 1)));
       }, (finished ? changeSpeed : typeSpeed)
     );
   }
+})();
