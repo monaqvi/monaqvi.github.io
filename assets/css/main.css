@@ -290,28 +290,27 @@ span.lived {
   height: calc(100vh - 60px);
   position : relative;
   background-repeat: no-repeat;
-  background-position : 20% 60px;
-  background-size: contain;
+  background-position : center center;
+  background-size: auto 90vh;
   background-attachment : fixed;
 }
 
 .bg__bar {
-  background-image : url(
-    https://get.google.com/trips/img/phone--empty.png
-  );
-    /*https://get.google.com/trips/img/phone--benefit-3.png*/
-  /*z-index: 1;*/
+  background-image : url(https://get.google.com/trips/img/phone--empty.png);
 }
  
 .bg__baz {
-  background-image : url(
-    https://get.google.com/trips/img/phone--benefit-2.png
- ); 
+  background-image : url(https://get.google.com/trips/img/phone--empty.png); 
+    /*https://get.google.com/trips/img/phone--benefit-2.png*/
 }
 
 @media (min-width: 36em) {
   .splash-container {
     background-position: top left 65%;
+  }
+
+  .parallax {
+    background-position : 20px center;
   }
 }
 
