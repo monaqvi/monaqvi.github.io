@@ -168,7 +168,7 @@ a.pure-button-primary {
   overflow: hidden;
   /* The following styles are required for the "scroll-over" effect */
   width: 100%;
-  height: 88%;
+  height: 90%;
   top: 0;
   left: 0;
   position: fixed !important;
@@ -210,9 +210,10 @@ a.pure-button-primary {
 .content-wrapper {
   /* These styles are required for the "scroll-over" effect */
   position: absolute;
-  top: 87%;
+  top: 89%;
   width: 100%;
-  min-height: 12%;
+  min-height: 11%;
+  min-width: 300px;
   z-index: 2;
   background: white;
 
@@ -298,30 +299,26 @@ a.pure-button-primary {
  * -- PORTFOLIO --
  */
 
- .parallax {
-  width: 100%;
- }
+.parallax {
+  height: 100vh;
+  min-height: 600px;
+  position : relative;
+  background-repeat: no-repeat;
+  background-position : center left;
+}
 
- .parallax div {
-   position : relative;
-   height : 600px;
-   background-attachment : fixed;
-   background-position : top left;
-   background-size : auto auto;
-   overflow: hidden;
- }
-
- .bg__bar {
-   background-image : url(
-     http://i.dailymail.co.uk/i/pix/2009/10/21/article-1221979-06E62A13000005DC-52_306x534.jpg
-   );
- }
-
- .bg__baz {
-   background-image : url(
-     http://i.dailymail.co.uk/i/pix/2009/10/21/article-1221979-06E62A13000005DC-52_306x534.jpg
-   ); 
- }
+.bg__bar {
+  background-image : url(
+    http://i.dailymail.co.uk/i/pix/2009/10/21/article-1221979-06E62A13000005DC-52_306x534.jpg
+  );
+  z-index: 9999;
+}
+ 
+.bg__baz {
+  background-image : url(
+    https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios9-iphone6-home-screen-jiggle-app.jpg
+ ); 
+}
 
 @media (min-width: 36em) {
   .splash-container {
@@ -364,6 +361,11 @@ a.pure-button-primary {
   /* We remove the border-separator assigned to .l-box-lrg */
   .l-box-lrg {
     border: none;
+  }
+
+  .parallax {
+    position : relative;
+    background-attachment : fixed;
   }
 }
 
