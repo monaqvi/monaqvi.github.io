@@ -261,24 +261,51 @@ span.lived {
  * -- PORTFOLIO --
  */
 
+/* In case ever want to use image tags instead */
+.phone {
+  height: 100%;
+  width: auto;
+  margin: 0;
+  position: relative;
+}
+
+.phone .empty {
+  height: auto;
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.phone .screen {
+  height: auto;
+  width: 56%;
+  top: 12%;
+  left: 20%;
+  position: absolute;
+  z-index: 1;
+}
+
 .parallax {
-  height: 100vh;
-  min-height: 600px;
+  height: calc(100vh - 60px);
   position : relative;
   background-repeat: no-repeat;
-  background-position : center left;
+  background-position : 20% 60px;
+  background-size: contain;
+  background-attachment : fixed;
 }
 
 .bg__bar {
   background-image : url(
-    http://i.dailymail.co.uk/i/pix/2009/10/21/article-1221979-06E62A13000005DC-52_306x534.jpg
+    https://get.google.com/trips/img/phone--empty.png
   );
-  z-index: 9999;
+    /*https://get.google.com/trips/img/phone--benefit-3.png*/
+  /*z-index: 1;*/
 }
  
 .bg__baz {
   background-image : url(
-    https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios9-iphone6-home-screen-jiggle-app.jpg
+    https://get.google.com/trips/img/phone--benefit-2.png
  ); 
 }
 
@@ -320,9 +347,26 @@ span.lived {
     background-position: top left 80%;
   }
 
-  .parallax {
-    position : relative;
-    background-attachment : fixed;
+  .phone {
+    position: relative;
+    height: calc(100vh - 64px);
+    width: calc((100vh - 64px) * .6922);
+    margin: 0 auto;
+    min-height: 340px;
+    min-width: 236px;
+  }
+
+  .phone .empty {
+    height: 100%;
+    width: auto;
+    min-height: 340px;
+    min-width: 236px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 
