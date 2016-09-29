@@ -49,7 +49,6 @@ span.lived {
 
 .l-box-lrg {
   padding: 2em;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .is-center {
@@ -356,11 +355,6 @@ a.pure-button-primary {
 
   .splash-container {
     background-position: top left 80%;
-  }
-
-  /* We remove the border-separator assigned to .l-box-lrg */
-  .l-box-lrg {
-    border: none;
   }
 
   .parallax {
