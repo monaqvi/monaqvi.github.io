@@ -296,7 +296,7 @@ span.lived {
   height: calc(100vh - 64px);
   position : relative;
   background-repeat: no-repeat;
-  background-position : center center;
+  background-position : 50% -10px;
   background-size: auto 90vh;
   background-attachment : scroll;
   /*background-attachment : fixed;*/
