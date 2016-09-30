@@ -288,7 +288,8 @@ span.lived {
   background-repeat: no-repeat;
   background-position : center center;
   background-size: auto 90vh;
-  background-attachment : fixed;
+  background-attachment : scroll;
+  /*background-attachment : fixed;*/
 }
 
 .bg__bar {
@@ -327,16 +328,7 @@ span.lived {
 
   .parallax {
     background-position : 20px center;
-  }
-}
-
-@media (min-width: 36em) {
-  .splash-container {
-    background-position: top left 65%;
-  }
-
-  .parallax {
-    background-position : 20px center;
+    background-attachment : fixed;
   }
 }
 
