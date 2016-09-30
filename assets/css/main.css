@@ -292,8 +292,16 @@ span.lived {
   /*background-attachment : fixed;*/
 }
 
-.bg__bar {
-  background-image : url(https://get.google.com/trips/img/phone--empty.png);
+#app_1 {
+  background-image : url(/assets/img/phone_1.png);
+}
+
+#app_2 {
+  background-image : url(/assets/img/phone_2.png);
+}
+
+#app_3 {
+  background-image : url(/assets/img/phone_3.png);
 }
 
 /* In case ever want to use image tags instead */
