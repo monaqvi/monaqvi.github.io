@@ -272,7 +272,7 @@ span.lived {
  */
 
 .portfolio-desc {
-  padding-top: 1em;
+  padding: 1em;
 }
 
 .portfolio-header {
@@ -373,7 +373,7 @@ span.lived {
   }
 
   .portfolio-desc {
-     padding-top: 5em;
+    padding: 5em 1em 1em 1em;
   }
 
   .phone {
