@@ -292,6 +292,15 @@ span.lived {
   /*background-attachment : fixed;*/
 }
 
+.highlights {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.portfolio-desc .indent {
+  margin-left: 1.5em;
+}
+
 #app_1 {
   background-image : url(/assets/img/phone_1-min.png);
 }

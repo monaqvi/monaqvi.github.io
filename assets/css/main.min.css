@@ -52,6 +52,8 @@ span.visited{color:#91BDFF;}
 .portfolio-desc{padding:1em;}
 .portfolio-header{color:white;font-size:2em;font-weight:100;font-family:Roboto,sans-serif;}
 .parallax{height:calc(100vh - 60px);position:relative;background-repeat:no-repeat;background-position:center center;background-size:auto 90vh;background-attachment:scroll;}
+.highlights{font-weight: bold;text-decoration: underline;}
+.portfolio-desc .indent{margin-left: 1.5em;}
 #app_1{background-image:url(/assets/img/phone_1-min.png);}
 #app_2{background-image:url(/assets/img/phone_2-min.png);}
 #app_3{background-image:url(/assets/img/phone_3-min.png);}
