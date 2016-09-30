@@ -15,6 +15,11 @@
   {% else %}
   {% assign tags = layout.tags %}
   {% endif %}
+  {% if page.image %}
+  {% assign image = page.image %}
+  {% else %}
+  {% assign image = layout.image %}
+  {% endif %}
   <title>{{ title }}</title>
   <meta charset="UTF-8">
   <meta name="description" content="{{ description }}" />
@@ -51,12 +56,13 @@
   <meta name="twitter:card" content="product">
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:image" content="/assets/img/icons/android-icon-96x96.png">
+  <meta name="twitter:image" content="{{ image }}">
 
   <!-- Faceboom Open Graph data -->
-  <meta property="og:page_name" content="{{ title }}" />
-  <meta property="og:title" content="{{ description }}" />
-  <meta property="og:image" content="/assets/img/icons/android-icon-96x96.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:image" content="{{ image }}" />
 
   <!-- Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -71,6 +77,7 @@
   {% assign title = nil %}
   {% assign description = nil %}
   {% assign tags = nil %}
+  {% assign image = nil %}
 
 
   {% if page.css %}
