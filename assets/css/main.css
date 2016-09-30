@@ -342,11 +342,6 @@ span.lived {
   .splash-container {
     background-position: top left 65%;
   }
-
-  .parallax {
-    background-position : 20px center;
-    background-attachment : fixed;
-  }
 }
 
 @media (min-width: 48em) {
@@ -383,6 +378,11 @@ span.lived {
 
   .portfolio-desc {
     padding: 5em 1em 1em 1em;
+  }
+
+  .parallax {
+    background-position : 20px center;
+    background-attachment : fixed;
   }
 
   .phone {

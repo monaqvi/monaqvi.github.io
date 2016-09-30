@@ -61,7 +61,6 @@ span.visited{color:#91BDFF;}
 .phone .empty{height:auto;width:100%;display:block;position:relative;z-index:2;}
 .phone .screen{height:auto;width:56%;top:12%;left:20%;position:absolute;z-index:1;}
 @media (min-width:36em){.splash-container{background-position:top left 65%;}
-.parallax{background-position:20px center;background-attachment:fixed;}
 }
 @media (min-width:48em){body{font-size:16px;}
 .content{padding:1em;}
@@ -70,6 +69,7 @@ span.visited{color:#91BDFF;}
 .splash{width:50%;height:50%;font-size:150%;}
 .splash-container{background-position:top left 80%;}
 .portfolio-desc{padding:5em 1em 1em 1em;}
+.parallax{background-position:20px center;background-attachment:fixed;}
 .phone{position:relative;height:calc(100vh - 64px);width:calc((100vh - 64px) * .6922);margin:0 auto;min-height:340px;min-width:236px;}
 .phone .empty{height:100%;width:auto;min-height:340px;min-width:236px;margin:0 auto;position:absolute;top:0;bottom:0;left:0;right:0;}
 }
