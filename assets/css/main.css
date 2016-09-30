@@ -293,15 +293,15 @@ span.lived {
 }
 
 #app_1 {
-  background-image : url(/assets/img/phone_1.png);
+  background-image : url(/assets/img/phone_1-min.png);
 }
 
 #app_2 {
-  background-image : url(/assets/img/phone_2.png);
+  background-image : url(/assets/img/phone_2-min.png);
 }
 
 #app_3 {
-  background-image : url(/assets/img/phone_3.png);
+  background-image : url(/assets/img/phone_3-min.png);
 }
 
 /* In case ever want to use image tags instead */

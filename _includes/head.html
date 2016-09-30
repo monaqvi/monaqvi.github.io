@@ -16,6 +16,7 @@
   {% assign tags = layout.tags %}
   {% endif %}
   <title>{{ title }}</title>
+  <meta charset="UTF-8">
   <meta name="description" content="{{ description }}" />
   <meta name="keywords" content="{{ tags | join: ', ' }}" />
   <meta name="author" content="Muhammad Naqvi">
@@ -76,6 +77,8 @@
   {% else %}
   {% assign custom_css = layout.css %}
   {% endif %}
-  <link rel="stylesheet" href="{{ custom_css }}">
+  {% for css in custom_css %}
+  <link rel="stylesheet" href="{{ css }}">
+  {% endfor %}
   {% assign custom_css = nil %}
 </head>
