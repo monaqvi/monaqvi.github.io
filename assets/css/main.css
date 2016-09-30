@@ -384,7 +384,6 @@ span.lived {
   .parallax {
     background-position : 1.5em center;
     background-size: 50vw auto;
-    background-attachment : fixed;
   }
 
   .phone {
@@ -407,6 +406,12 @@ span.lived {
     bottom: 0;
     left: 0;
     right: 0;
+  }
+}
+
+@media (min-device-width: 48em) {
+  .parallax {
+    background-attachment : fixed;
   }
 }
 
