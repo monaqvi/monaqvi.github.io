@@ -50,7 +50,7 @@ span.visited{color:#91BDFF;}
 .interests-table-list{list-style-type:none;margin:0;padding:0;text-align:center;}
 .interests-table-list li{padding:0.8em 0;background:#f7f7f7;border-bottom:1px solid #e7e7e7;}
 .portfolio-desc{padding:1em;}
-.portfolio-header{color:white;font-size:2em;font-weight:100;font-family:Roboto,sans-serif;}
+.portfolio-header{color:white;font-size:2em;font-weight:100;font-family:sans-serif;}
 .parallax{height:calc(100vh - 60px);position:relative;background-repeat:no-repeat;background-position:center center;background-size:auto 90vh;background-attachment:scroll;}
 .highlights{font-weight: bold;text-decoration: underline;}
 .portfolio-desc .indent{margin-left: 1.5em;}
