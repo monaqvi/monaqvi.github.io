@@ -284,7 +284,7 @@ span.lived {
 }
 
 .parallax {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 64px);
   position : relative;
   background-repeat: no-repeat;
   background-position : center center;
@@ -382,7 +382,8 @@ span.lived {
   }
 
   .parallax {
-    background-position : 20px center;
+    background-position : 1.5em center;
+    background-size: 50vw auto;
     background-attachment : fixed;
   }
 
@@ -417,5 +418,9 @@ span.lived {
 
   .splash-container {
     background-position: top center;
+  }
+
+  .parallax {
+    background-size: 35vw auto;
   }
 }

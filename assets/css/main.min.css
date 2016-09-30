@@ -51,9 +51,9 @@ span.visited{color:#91BDFF;}
 .interests-table-list li{padding:0.8em 0;background:#f7f7f7;border-bottom:1px solid #e7e7e7;}
 .portfolio-desc{padding:1em;}
 .portfolio-header{color:white;font-size:2em;font-weight:100;font-family:sans-serif;}
-.parallax{height:calc(100vh - 60px);position:relative;background-repeat:no-repeat;background-position:center center;background-size:auto 90vh;background-attachment:scroll;}
-.highlights{font-weight: bold;text-decoration: underline;}
-.portfolio-desc .indent{margin-left: 1.5em;}
+.parallax{height:calc(100vh - 64px);position:relative;background-repeat:no-repeat;background-position:center center;background-size:auto 90vh;background-attachment:scroll;}
+.highlights{font-weight:bold;text-decoration:underline;}
+.portfolio-desc .indent{margin-left:1.5em;}
 #app_1{background-image:url(/assets/img/phone_1-min.png);}
 #app_2{background-image:url(/assets/img/phone_2-min.png);}
 #app_3{background-image:url(/assets/img/phone_3-min.png);}
@@ -69,10 +69,11 @@ span.visited{color:#91BDFF;}
 .splash{width:50%;height:50%;font-size:150%;}
 .splash-container{background-position:top left 80%;}
 .portfolio-desc{padding:5em 1em 1em 1em;}
-.parallax{background-position:20px center;background-attachment:fixed;}
+.parallax{background-position:1.5em center;background-size:50vw auto;background-attachment:fixed;}
 .phone{position:relative;height:calc(100vh - 64px);width:calc((100vh - 64px) * .6922);margin:0 auto;min-height:340px;min-width:236px;}
 .phone .empty{height:100%;width:auto;min-height:340px;min-width:236px;margin:0 auto;position:absolute;top:0;bottom:0;left:0;right:0;}
 }
 @media (min-width:78em){.splash{font-size:300%;}
 .splash-container{background-position:top center;}
+.parallax{background-size:35vw auto;}
 }
