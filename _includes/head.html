@@ -1,27 +1,30 @@
-<head>
-  <meta charset="utf-8">
-  {% if page.title %}
+{% if page.title %}
   {% assign title = page.title %}
-  {% else %}
+{% else %}
   {% assign title = layout.title %}
-  {% endif %}
-  {% if page.decription %}
+{% endif %}
+
+{% if page.description %}
   {% assign description = page.description %}
-  {% else %}
+{% else %}
   {% assign description = layout.description %}
-  {% endif %}
-  {% if page.decription %}
+{% endif %}
+
+{% if page.tags %}
   {% assign tags = page.tags %}
-  {% else %}
+{% else %}
   {% assign tags = layout.tags %}
-  {% endif %}
-  {% if page.image %}
+{% endif %}
+
+{% if page.image %}
   {% assign image = page.image %}
-  {% else %}
+{% else %}
   {% assign image = layout.image %}
-  {% endif %}
-  <title>{{ title }}</title>
+{% endif %}
+
+<head>
   <meta charset="UTF-8">
+  <title>{{ title }}</title>
   <meta name="description" content="{{ description }}" />
   <meta name="keywords" content="{{ tags | join: ', ' }}" />
   <meta name="author" content="Muhammad Naqvi">
@@ -74,19 +77,12 @@
   <![endif]-->
   <!--[if gt IE 8]><!-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
-  {% assign title = nil %}
-  {% assign description = nil %}
-  {% assign tags = nil %}
-  {% assign image = nil %}
 
-
-  {% if page.css %}
-  {% assign custom_css = page.css %}
-  {% else %}
-  {% assign custom_css = layout.css %}
-  {% endif %}
-  {% for css in custom_css %}
-  <link rel="stylesheet" href="{{ css }}">
+  {% for layout_css in layout.css %}
+    <link rel="stylesheet" href="{{ layout_css }}">
   {% endfor %}
-  {% assign custom_css = nil %}
+
+  {% for custom_css in page.css %}
+    <link rel="stylesheet" href="{{ custom_css }}">
+  {% endfor %}
 </head>
