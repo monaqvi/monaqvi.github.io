@@ -1,10 +1,10 @@
 name: Muhammad Naqvi
 markdown: kramdown
-permalink: /notes/:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title
 google_analytics: UA-84700556-1
 
 paginate: 10
-paginate_path: "/notes/page:num/"
+paginate_path: "/blog/page:num/"
 
 gems:
   - jekyll-sitemap
