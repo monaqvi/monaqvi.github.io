@@ -5,36 +5,29 @@ layout: blog
   <div>
     <h1 class="post-title">{{ page.title }}</h1>
     <h3 class="post-subheader post-no-top-margin">{{ page.description }}</h3>
+    {% if page.date %}
     <h3 class="content-subhead post-no-top-margin">
       <info datetime="{{ page.date }}">
         {{ page.date | date_to_string }}
       </info>
     </h3>
+    {% endif %}
     <!-- Post content -->
     <div>
       {{ content }}
     </div>
     <!-- Post info -->
+    <hr />
     <div>
       <!-- Categories-->
       <p>
       <i class="fa fa-folder-open" aria-hidden="true"></i>
       {% unless page.categories == empty %}
-        {% assign categories_list = page.categories %}
-        {% if categories_list.first[0] == null %}
-        {% for category in categories_list %} 
+        {% for category in page.categories %} 
           <a href="/notes/categories#{{ category }}-ref">
-            {{ category | join: "/" }} <span>({{ site.categories[category].size }})</span>
-            {% unless forloop.last %},{% endunless %}
+            {{ category | join: "/" }} ({{ site.categories[category].size }}){% unless forloop.last %},{% endunless %}
           </a>
         {% endfor %}
-        {% else %}
-        {% for category in categories_list %} 
-          <a href="/notes/categories#{{ category[0] }}-ref">
-            {{ category[0] | join: "/" }} <span>/{{ category[1].size }})</span>
-          </a>
-        {% endfor %}
-        {% endif %}
       {% endunless %}
       </p>
 
@@ -42,23 +35,11 @@ layout: blog
       <p>
       <i class="fa fa-tags" aria-hidden="true"></i>
       {% unless page.tags == empty %}
-        {% assign tags_list = page.tags %}
-        {% if tags_list.first[0] == null %}
-        {% for tag in tags_list %} 
+        {% for tag in page.tags %} 
           <a href="/notes/tags#{{ tag }}-ref">
-          {{ tag }} <span>({{ site.tags[tag].size }})</span>
-          {% unless forloop.last %},{% endunless %}
+          {{ tag }} ({{ site.tags[tag].size }}){% unless forloop.last %},{% endunless %}
           </a>
         {% endfor %}
-        {% else %}
-        {% for tag in tags_list %} 
-          <a href="/notes/tags#{{ tag[0] }}-ref">
-            {{ tag[0] }} <span>({{ tag[1].size }})</span>
-            {% unless forloop.last %},{% endunless %}
-          </a>
-        {% endfor %}
-        {% endif %}
-        {% assign tags_list = nil %}
       {% endunless %}
       </p>
     </div>
