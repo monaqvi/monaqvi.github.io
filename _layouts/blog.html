@@ -6,10 +6,7 @@ css: [/assets/blog/css/style.css]
 ---
 <nav class="sidebar pure-u-1 pure-u-md-1-4">
   <div class="header">
-    <h1 class="brand-title">The law blog of</h1>
-    <h2 class="brand-tagline">
-      <span class="avoidwrap">Bob Loblaw</span>
-    </h2>
+    <h1 class="brand-title">{{ site.name }}'s Blog</h1>
     <nav class="nav">
       <ul class="nav-list">
         <span class="avoidwrap">
@@ -20,9 +17,9 @@ css: [/assets/blog/css/style.css]
             <a class="pure-button" href="/blog/tags">Tags</a>
           </li>
         </span>
-        <span>
+        <span class="avoidwrap">
           <li class="nav-item">
-            <a class="pure-button" href="/blog/">Notes</a>
+            <a class="pure-button" href="/blog/">Blog</a>
           </li>
           <li class="nav-item">
             <a class="pure-button" href="/">Home</a>
@@ -38,9 +35,9 @@ css: [/assets/blog/css/style.css]
     {{ content }}
   </div>
   <footer class="pure-menu pure-menu-horizontal footer">
-    <a href="https://monaqvi.github.io/notes/atom.xml">RSS</a>
+    <a href="https://{{ site.github.owner_name }}.github.io/blog/atom.xml">RSS</a>
     <a> | </a>
-    <a href="https://github.com/monaqvi/monaqvi.github.io/tree/master/{{ page.path }}">This blog is open-source on GitHub!</a>
+    <a href="https://github.com/{{ site.github.owner_name }}/{{ site.github.owner_name }}.github.io/tree/master/{{ page.path }}">This blog is open-source on GitHub!</a>
   </footer>
 </main>
 <script id="dsq-count-scr" src="//bobloblaw.disqus.com/count.js" async></script>

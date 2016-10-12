@@ -24,7 +24,7 @@ layout: blog
       <i class="fa fa-folder-open" aria-hidden="true"></i>
       {% unless page.categories == empty %}
         {% for category in page.categories %} 
-          <a href="/notes/categories#{{ category }}-ref">
+          <a href="/blog/categories#{{ category }}-ref">
             {{ category | join: "/" }} ({{ site.categories[category].size }}){% unless forloop.last %},{% endunless %}
           </a>
         {% endfor %}
@@ -36,7 +36,7 @@ layout: blog
       <i class="fa fa-tags" aria-hidden="true"></i>
       {% unless page.tags == empty %}
         {% for tag in page.tags %} 
-          <a href="/notes/tags#{{ tag }}-ref">
+          <a href="/blog/tags#{{ tag }}-ref">
           {{ tag }} ({{ site.tags[tag].size }}){% unless forloop.last %},{% endunless %}
           </a>
         {% endfor %}
