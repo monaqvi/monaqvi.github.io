@@ -8,7 +8,7 @@ image: http://www.steenvanrosette.nl/images/rosette.gif
 ---
 ![Rosetta Stone](http://www.steenvanrosette.nl/images/rosette.gif)
 
-The Rosetta Stone is one of the most incredible artifacts ever found--without it, much of human history would be illegible. By recording the exact same text in three different languages, the Rosetta Stone allowed someone who spoke any one language to easily deciper and learn any other.
+The Rosetta Stone is one of the most incredible artifacts ever found--without it, much of human history would be illegible. By recording the exact same text in three different languages, the Rosetta Stone allowed someone who spoke any one language to easily deciper and learn any of the others.
 
 An oft-repeated mantra of software is that once you learn your first programming language, it's really easy to learn another. It generally holds true because the concepts, fundamentals, and even syntax of most languages are fairly similar to one another. 
 
