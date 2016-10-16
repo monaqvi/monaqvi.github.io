@@ -1,6 +1,6 @@
 ---
 layout: post
-post_title: Placeholder
+title: Placeholder
 description: Sample placeholder post.
 categories: [meh]
 tags: [meh]
