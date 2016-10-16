@@ -1,6 +1,6 @@
 ---
 layout: post
-post_title: Introducing Rosetta
+title: Introducing Rosetta
 description: A quick cross-language reference for programmers
 categories: [Technology]
 tags: [programming, rosetta]
