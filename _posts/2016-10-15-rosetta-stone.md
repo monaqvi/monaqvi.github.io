@@ -4,9 +4,9 @@ title: Introducing Rosetta
 description: A quick cross-language reference for programmers
 categories: [Technology]
 tags: [programming, rosetta]
-image: http://www.steenvanrosette.nl/images/rosette.gif
+image: /assets/blog/img/rosetta_stone.gif
 ---
-![Rosetta Stone](http://www.steenvanrosette.nl/images/rosette.gif)
+![Rosetta Stone](/assets/blog/img/rosetta_stone.gif)
 
 The Rosetta Stone is one of the most incredible artifacts ever found--without it, much of human history would be illegible. By recording the exact same text in three different languages, the Rosetta Stone allowed someone who spoke any one language to easily deciper and learn any of the others.
 
