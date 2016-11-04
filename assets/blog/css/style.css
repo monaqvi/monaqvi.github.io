@@ -17,6 +17,10 @@ h3 {
   font-weight: 100;
 }
 
+span.highlight {
+  background-color: #e0f5ff;
+}
+
 .avoidwrap {
   display: inline-block;
 }
