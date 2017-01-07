@@ -26,7 +26,7 @@ span.highlight {
 }
 
 /* LAYOUT CSS */
-.pure-img-responsive {
+#content img {
   max-width: 100%;
   height: auto;
 }
@@ -220,6 +220,19 @@ ul.posts-list > li {
 .footer .pure-menu a:focus {
   background: none;
 }
+
+/* Post styles */
+
+code {
+  margin: 2em;
+}
+
+.fill-grey {
+  background: lightgrey;
+}
+
+
+/* Responsiveness */
 
 @media (min-width: 48em) {
   .content {
