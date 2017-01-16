@@ -17,12 +17,8 @@ h3 {
   font-weight: 100;
 }
 
-span.highlight {
-  background-color: #e0f5ff;
-}
-
-.avoidwrap {
-  display: inline-block;
+li {
+  padding-bottom: .25em;
 }
 
 /* LAYOUT CSS */
@@ -151,21 +147,28 @@ span.highlight {
   text-shadow: 0 1px 1px #333;
 }
 
-.inactive {
-  color: #aaa;
+ul.posts-list {
+  padding-left: 1em;
 }
 
-.right-aligned {
-  text-align: right;
+ul.posts-list > li {
+  list-style: none;
 }
 
-.left-aligned {
-  text-align: left;
-}
-
-.center-aligned {
+.footer {
   text-align: center;
+  padding: 1em 0;
 }
+.footer a {
+  color: #ccc;
+  font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+  background: none;
+}
+
+/* Tabordion */
 
 .tabordion {
   color: #333;
@@ -200,37 +203,39 @@ span.highlight {
   display: block;
 }
 
-ul.posts-list {
-  padding-left: 1em;
+/* Styling */
+
+span.highlight {
+  background-color: #e0f5ff;
 }
 
-ul.posts-list > li {
-  list-style: none;
+.avoidwrap {
+  display: inline-block;
 }
 
-.footer {
+.inactive {
+  color: #aaa;
+}
+
+.right-aligned {
+  text-align: right;
+}
+
+.left-aligned {
+  text-align: left;
+}
+
+.center-aligned {
   text-align: center;
-  padding: 1em 0;
-}
-.footer a {
-  color: #ccc;
-  font-size: 80%;
-}
-.footer .pure-menu a:hover,
-.footer .pure-menu a:focus {
-  background: none;
 }
 
-/* Post styles */
+/* Code styling */
 
 code {
-  margin: 2em;
+  display: inline-block;
+  padding: 1em;
+  background: #EFEFEF;
 }
-
-.fill-grey {
-  background: lightgrey;
-}
-
 
 /* Responsiveness */
 
