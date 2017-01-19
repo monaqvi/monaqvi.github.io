@@ -244,14 +244,20 @@ span.lived {
  * -- INTERESTS TABLE WRAPPER --
  */
 .interests-tables {
-    max-width: 980px;
-    margin: 0 auto;
-    text-align: center;
-}
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+} .interests-tables .content-subhead span {
+    text-align: left;
+  } .interests-tables .content-subhead span span {
+      display: inline-block;
+      *display: inline;/* for IE7*/
+      width: 4em;
+  }
 
 .interests-table {
-    border: 1px solid #ddd;
-    padding: 0;
+  border: 1px solid #ddd;
+  padding: 0;
 } .interests-table h1 {
     font-size: 1.5em;
     margin: 0;
