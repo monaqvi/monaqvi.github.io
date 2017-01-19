@@ -238,13 +238,14 @@ span.emphasize {
 /* Code styling */
 
 code {
-  display: inline-block;
+  display: block;
   padding: 1em;
   background: #EFEFEF;
 }
 
 span.code-comment {
   color: gray;
+  display: inline-block;
 }
 
 /* Responsiveness */
