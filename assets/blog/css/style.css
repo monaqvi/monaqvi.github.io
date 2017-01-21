@@ -239,7 +239,7 @@ span.emphasize {
 
 code {
   display: block;
-  padding: 1em;
+  padding: .5em;
   background: #EFEFEF;
 }
 
@@ -247,6 +247,32 @@ span.code-comment {
   color: gray;
   display: inline-block;
 }
+
+span.bottom-border {
+  border-bottom: 2px solid;
+} span.bottom-border.orange {
+    border-color: orange;
+  } span.bottom-border.red {
+    border-color: red;
+  } span.bottom-border.blue {
+    border-color: blue;
+  } span.bottom-border.green {
+    border-color: green;
+  } span.bottom-border.brown {
+    border-color: brown;
+  } span.bottom-border.darkviolet {
+    border-color: darkviolet;
+  } span.bottom-border.turquoise {
+    border-color: turquoise;
+  } span.bottom-border.steelblue {
+    border-color: steelblue;
+  } span.bottom-border.springgreen {
+    border-color: springgreen;
+  } span.bottom-border.tomato {
+    border-color: tomato;
+  } span.bottom-border.pink {
+    border-color: hotpink;
+  }
 
 /* Responsiveness */
 
