@@ -1,0 +1,291 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* -- BASE STYLES -- */
+body {
+  line-height: 1.5em;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  color: #34495e;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+span.avoid-wrap {
+  display: inline-block;
+}
+
+img.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -- LAYOUT STYLES -- */
+.m-box {
+  padding: 1em;
+}
+
+.l-box {
+  padding: 2em;
+} .l-box.sides-only {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.pure-form label {
+  margin: 1em 0 0;
+  font-weight: bold;
+  font-size: 100%;
+}
+.pure-form input[type] {
+  border: 2px solid #ddd;
+  box-shadow: none;
+  font-size: 100%;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+a.pure-button {
+  background: white;
+  border: 2px solid #2d3e50;
+  color: #1f8dd6;
+  font-weight: bold;
+  margin: .5em 2em;
+}
+a.pure-button-primary {
+  font-size: 125%;
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+}
+
+
+/* -- MENU STYLES -- */
+.home-menu {
+  background: #2d3e50;
+  padding: 0.5em;
+  text-align: left;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+} 
+  .home-menu ul {
+    float: right;
+  }
+  .home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+    text-transform: none;
+  }
+  .home-menu a.highlight {
+    color: #6FBEF3;
+    text-shadow: 0 0 black;
+  }
+  .home-menu li a:hover,
+  .home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+  }
+
+.pure-menu.pure-menu-fixed {
+  /* Fixed menus normally have a border at the bottom. */
+  border-bottom: none;
+  /* I need a higher z-index here because of the scroll-over effect. */
+  z-index: 4;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -3em;
+  visibility: hidden;
+}
+
+/* -- SPLASH STYLES -- */
+.splash-container {
+  background: #1f8dd6;
+  background-image: url(../img/helping-hand.jpg);
+  background-position: 70% 50%;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+  /* The following styles are required for the "scroll-over" effect */
+  width: 100%;
+  height: 88%;
+  top: 0;
+  left: 0;
+  position: fixed !important;
+}
+.splash {
+  /* absolute center .splash within .splash-container */
+  width: 70%;
+  height: 50%;
+  margin: 0;
+  position: absolute;
+  padding: .5em .5em 0 .5em;
+  top: 3.5em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+.splash .pure-button.pure-button-primary {
+  opacity: .75;
+  border: 1px solid #00003C;
+  /*color: #00003C;*/
+}
+.splash-head {
+  font-weight: bold;
+  color: white;
+  font-weight: 100;
+  line-height: 1em;
+  text-shadow: 2px 2px 2px #00003C;
+}
+.splash-head.sub-head {
+  font-weight: bold;
+  margin-top: .25em;
+  padding-top: .25em;
+}
+
+.main-cta {
+  position: absolute;
+  padding: 2em 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* -- CONTENT STYLES -- */
+.content-wrapper {
+  /* These styles are required for the "scroll-over" effect */
+  position: absolute;
+  top: 87%;
+  width: 100%;
+  min-height: 12%;
+  z-index: 2;
+  background: white;
+}
+
+.content {
+  padding: 1em 1em 3em;
+}
+
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 1em 0;
+}
+  .content-subhead {
+    color: #1f8dd6;
+    text-align: center;
+  }
+  .content-subhead i {
+    margin-right: 7px;
+  }
+  .content-subhead img {
+    padding: 0 3em;
+  }
+
+.ribbon {
+  background: #1f8dd6;
+  color: #F7F7F7;
+} 
+  .ribbon.dark-ribbon {
+    background: #2d3e50;
+  }
+  .ribbon.light-ribbon {
+    background: #60B3E6;
+  }
+  .ribbon .content-head {
+    text-shadow: 0 1px black;
+    color: white;
+  }
+
+blockquote {
+  margin: 0;
+}
+  blockquote p {
+    color: white;
+  }
+  blockquote cite {
+    display: block;
+  }
+    blockquote cite img {
+      display: inline-block;
+      width: 2.5em;
+      height: 2.5em;
+      border: 2px solid black;
+      border-radius: 50%;
+    }
+
+.footer {
+  background: #111;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* -- TYPEWRITER EFFECT -- */
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* -- TABLET MEDIA QUERIES -- */
+@media (min-width: 48em) {
+  body {
+    font-size: 16px;
+  }
+
+  .splash {
+    font-size: 125%;
+    padding: 2em;
+  }
+
+  .splash-container {
+    background-position: 50% 50%;
+  }
+}
+
+/* -- DESKTOP STYLES -- */
+@media (min-width: 78em) {
+  .splash {
+    font-size: 150%;
+  }
+}
