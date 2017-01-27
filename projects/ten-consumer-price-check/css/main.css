@@ -35,32 +35,33 @@ img.pure-img-responsive {
 }
 
 /* -- LAYOUT STYLES -- */
+.no-margin {
+  margin: 0;
+}
+
 .m-box {
   padding: 1em;
 }
-
 .l-box {
   padding: 2em;
-} .l-box.sides-only {
+}
+.sides-only {
   padding-top: 0;
   padding-bottom: 0;
 }
 
+.is-right {
+  text-align: right;
+}
 .is-center {
   text-align: center;
 }
-
-.pure-form label {
-  margin: 1em 0 0;
-  font-weight: bold;
-  font-size: 100%;
+.md-center {
+  /* See media query */
 }
-.pure-form input[type] {
-  border: 2px solid #ddd;
-  box-shadow: none;
-  font-size: 100%;
-  width: 100%;
-  margin-bottom: 1em;
+
+.indented {
+  margin-left: 1em;
 }
 
 a.pure-button {
@@ -244,6 +245,47 @@ blockquote {
   width: 100%;
 }
 
+/* -- FORM -- */
+.pure-form label {
+  margin: 1em 0 0;
+  font-weight: bold;
+  font-size: 100%;
+}
+.pure-form input[type] {
+  border: 2px solid #ddd;
+  box-shadow: none;
+  font-size: 100%;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.invalid:after {
+  content: 'Please answer this before submitting.';
+  display: block;
+  color: rgb(219, 68, 55);
+} .tabordion div.invalid:after {
+  content: 'Please pick atleast one answer.';
+}
+
+[required] > legend:after,
+[required] > span:after {
+  content: '*';
+  color: rgb(219, 68, 55);
+}
+
+/* Reverse defaults */
+.pure-form fieldset,
+.pure-form input[type] {
+  padding: .5em;
+  margin: 0;
+}
+.pure-form > section {
+  margin: 2em 0;
+}
+.pure-form p {
+  margin: .25em 0;
+}
+
 /* -- TYPEWRITER EFFECT -- */
 .typed-cursor {
     opacity: 1;
@@ -280,6 +322,14 @@ blockquote {
 
   .splash-container {
     background-position: 50% 50%;
+  }
+
+  .md-center {
+    text-align: center;
+  }
+
+  .pure-form p {
+    margin: 1em 0;
   }
 }
 
