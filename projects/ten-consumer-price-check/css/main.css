@@ -258,6 +258,9 @@ blockquote {
   width: 100%;
   margin-bottom: 1em;
 }
+.pure-form fieldset * {
+  color: black;
+}
 
 .invalid:after {
   content: 'Please answer this before submitting.';
