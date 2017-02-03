@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 12px;
+}
+
 a {
   text-decoration: none;
   color: rgb(61, 146, 201);
@@ -13,12 +17,20 @@ a:focus {
   text-decoration: underline;
 }
 
+p {
+  margin: 1.5em 0;
+}
+
 h3 {
   font-weight: 100;
 }
 
 li {
   padding-bottom: .25em;
+}
+
+iframe {
+  width: 100%;
 }
 
 /* LAYOUT CSS */
@@ -235,6 +247,15 @@ span.emphasize {
   text-align: center;
 }
 
+.no-bottom-spacing {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.no-top-spacing {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 /* Code styling */
 
 code {
@@ -277,6 +298,10 @@ span.bottom-border {
 /* Responsiveness */
 
 @media (min-width: 48em) {
+  body {
+    font-size: 1em;
+  }
+
   .content {
     padding: 2em 3em 0;
     margin-left: 25%;
