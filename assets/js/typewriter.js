@@ -30,24 +30,40 @@
   ];
 
   var numWords = words.length;
-  var timeout;
-  var typeSpeed = 100,
-      changeSpeed = 1500;
 
-  timeout = typewriter(randomWord(), 0);
+  var console = document.getElementById('console');
+
+  var fullWord = console.innerHTML,
+      currWord = fullWord;
+
+  var typespeed = 100,
+      pause = 1000;
+
+  erase();
 
   function randomWord(prev) {
     var next = words[Math.floor(Math.random() * numWords)];
     return (next === prev) ? randomWord(prev) : next;
   };
+  
+  function type() {
+    if (currWord === fullWord) {
+      setTimeout(erase, pause);
+    } else {
+      setTimeout(type, typespeed);
+      currWord  = fullWord.slice(0, currWord.length + 1);
+    }
+    console.innerHTML = currWord;
+  }
 
-  function typewriter(word, i) {
-    var text = word.slice(0, i);
-    var finished = (word === text);
-    document.getElementById('change_this').innerHTML = text;
-    return setTimeout(function() {
-      timeout = typewriter((finished ? randomWord(word) : word), (finished ? 0 : (i + 1)));
-      }, (finished ? changeSpeed : typeSpeed)
-    );
+  function erase() {
+      if (currWord === '') {
+          fullWord = randomWord(fullWord);
+          setTimeout(type, pause);
+      } else {
+        setTimeout(erase, typespeed);
+        currWord  = fullWord.slice(0, currWord.length - 1);
+      } 
+      console.innerHTML = currWord;
   }
 })();

@@ -109,7 +109,7 @@ a {
  * This is the top section that appears on the page.
  */
 
-#change_this {
+#console {
   color: white;
   font-weight: bold;
   line-height: 1em;
@@ -354,6 +354,36 @@ span.lived {
   position: absolute;
   z-index: 1;
 }
+
+/*
+ * -- TYPEWRITER EFFECT --
+ */
+
+.typed-cursor {
+   opacity: 1;
+   -webkit-animation: blink 0.7s infinite;
+   -moz-animation: blink 0.7s infinite;
+   animation: blink 0.7s infinite;
+}
+@keyframes blink{
+   0% { opacity:1; }
+   50% { opacity:0; }
+   100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+   0% { opacity:1; }
+   50% { opacity:0; }
+   100% { opacity:1; }
+}
+@-moz-keyframes blink{
+   0% { opacity:1; }
+   50% { opacity:0; }
+   100% { opacity:1; }
+}
+
+/*
+ * -- RESPONSIVENESS --
+ */
 
 @media (min-width: 36em) {
   .splash-container {
