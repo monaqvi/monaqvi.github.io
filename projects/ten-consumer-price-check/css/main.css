@@ -78,6 +78,9 @@ a.pure-button-primary {
   text-transform: uppercase;
 }
 
+.sm-fill {
+  width: 100%;
+}
 
 /* -- MENU STYLES -- */
 .home-menu {
@@ -304,6 +307,10 @@ blockquote {
 .pure-form > section {
   margin: 10em 0;
 }
+.pure-form > section:last-of-type {
+  margin: 3em 0;
+}
+
 .pure-form .query-group {
   margin-bottom: 1.5em;
 }
@@ -679,7 +686,7 @@ fieldset {
     100% { opacity:1; }
 }
 
-/* -- TABLET MEDIA QUERIES -- 
+ /*-- TABLET MEDIA QUERIES -- */
 @media (min-width: 48em) {
   body {
     font-size: 16px;
@@ -694,12 +701,12 @@ fieldset {
     background-position: 50% 50%;
   }
 
-  .md-center {
-    text-align: center;
-  }
-
   .pure-form p {
     margin: 1em 0;
+  }
+
+  .sm-fill {
+    width: auto;
   }
 }
 
@@ -709,4 +716,3 @@ fieldset {
     font-size: 150%;
   }
 }
-*/
