@@ -244,6 +244,7 @@ blockquote {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 4;
 }
 
 /* -- FORM -- */
@@ -279,14 +280,18 @@ blockquote {
   content: 'Please pick atleast one answer.';
 }
 
+.required:after,
 [required] > legend:after,
-[required] > span:after {
+[required]> label:after {
   content: '*';
   color: rgb(219, 68, 55);
 }
 
 /* Reverse defaults */
-.pure-form fieldset,
+.pure-form fieldset {
+  margin: .75em 0 0 0;
+  padding: .25em;
+}
 .pure-form input[type] {
   padding: .25em;
   margin: 0;
@@ -301,8 +306,6 @@ blockquote {
 /* -- MATERIAL FORM -- */
 
 fieldset {
-  margin: 0 0 3rem;
-  padding: 0;
   border: none;
 }
 
