@@ -296,11 +296,13 @@ blockquote {
   padding: .25em;
   margin: 0;
 }
-.pure-form > section {
-  margin: 2em 0;
-}
 .pure-form p {
-  margin: .25em 0;
+  margin: 1.5em 0 0 0;
+}
+
+/* Space between sections */
+.pure-form > section {
+  margin: 10em 0;
 }
 
 /* -- MATERIAL FORM -- */
