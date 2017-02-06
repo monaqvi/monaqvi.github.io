@@ -264,6 +264,9 @@ code {
   background: #EFEFEF;
 }
 
+span.code-comment.js:before {
+  content: "// → ";
+}
 span.code-comment {
   color: gray;
   display: inline-block;
