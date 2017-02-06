@@ -293,6 +293,8 @@ span.bottom-border {
     border-color: tomato;
   } span.bottom-border.pink {
     border-color: hotpink;
+  } span.bottom-border.white {
+    border-color: white;
   }
 
 /* Responsiveness */
