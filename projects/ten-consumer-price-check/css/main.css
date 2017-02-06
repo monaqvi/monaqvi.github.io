@@ -283,9 +283,10 @@ blockquote {
 .pure-form .tooltip {
   position : relative;
 }
+.pure-form .tooltip > legend,
 .pure-form .tooltip > div {
   background: #F6F6F6;
-  padding: 2em .5em;
+  padding: 1em .5em;
 }
 .pure-form .tooltip:before {
   content: "";
@@ -296,6 +297,10 @@ blockquote {
   border-right: 1em solid transparent;
   border-bottom: 1em solid #F6F6F6;
   position : relative;
+}
+.pure-form .tooltip .example {
+  padding-bottom: 2em;
+  border-bottom: .5em solid white;
 }
 
 .invalid:after {
@@ -728,7 +733,7 @@ fieldset {
   }
 
   .pure-form p {
-    margin: 1em 0;
+    margin: 1.25em 0;
   }
 
   .sm-fill {
