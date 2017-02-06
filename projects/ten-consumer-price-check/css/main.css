@@ -288,6 +288,11 @@ blockquote {
   background: #F6F6F6;
   padding: .5em;
 }
+.tooltip .form-group input[disabled] {
+  background: none;
+  background-color: inherit;
+  color: #333;
+}
 .pure-form .tooltip:before {
   content: "";
   display: block;
@@ -333,7 +338,7 @@ blockquote {
 
 /* Space between sections and groups */
 .pure-form > section {
-  margin-bottom: 10em;
+  margin-bottom: 3em;
   position : relative;
 }
 .pure-form > section:last-of-type {
@@ -485,6 +490,7 @@ fieldset {
 }
 .form-group select:focus ~ .control-label,
 .form-group input:focus ~ .control-label,
+.form-radio input:focus ~ .helper,
 .form-group textarea:focus ~ .control-label {
   color: #337ab7;
 }
@@ -742,11 +748,19 @@ fieldset {
   .sm-fill {
     width: auto;
   }
+
+  .md-l-box {
+    padding: 2em;
+  }
 }
 
 /* -- DESKTOP STYLES -- */
 @media (min-width: 78em) {
   .splash {
     font-size: 150%;
+  }
+
+  .md-l-box {
+    padding: 3em;
   }
 }
