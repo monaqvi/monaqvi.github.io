@@ -26,6 +26,15 @@ span.avoid-wrap {
   display: inline-block;
 }
 
+span.underline {
+  text-decoration: underline;
+}
+
+span.emphasize {
+  color: #628EB9;
+  font-weight: bold;
+}
+
 img.pure-img-responsive {
   max-width: 100%;
   height: auto;
