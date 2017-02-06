@@ -30,6 +30,10 @@ span.underline {
   text-decoration: underline;
 }
 
+span.shrunk-font {
+  font-size: .5em;
+}
+
 span.emphasize {
   color: #628EB9;
   font-weight: bold;
