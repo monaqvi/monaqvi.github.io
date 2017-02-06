@@ -286,7 +286,7 @@ blockquote {
 .pure-form .tooltip > legend,
 .pure-form .tooltip > div {
   background: #F6F6F6;
-  padding: 1em .5em;
+  padding: .5em;
 }
 .pure-form .tooltip:before {
   content: "";
@@ -299,7 +299,7 @@ blockquote {
   position : relative;
 }
 .pure-form .tooltip .example {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   border-bottom: .5em solid white;
 }
 
@@ -333,7 +333,7 @@ blockquote {
 
 /* Space between sections and groups */
 .pure-form > section {
-  margin: 10em 0;
+  margin-bottom: 10em;
   position : relative;
 }
 .pure-form > section:last-of-type {
@@ -341,8 +341,11 @@ blockquote {
   position : relative;
 }
 
-.pure-form .query-group {
+.pure-form .query-group > div {
   margin-bottom: 1.5em;
+}
+.pure-form #query-template {
+  display: none;
 }
 
 /* -- MATERIAL FORM -- */
