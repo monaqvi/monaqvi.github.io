@@ -462,6 +462,9 @@ fieldset {
 .form-group input[type="file"] ~ .bar {
   display: none;
 }
+.form-group textarea {
+  height: 5em;
+}
 .form-group select,
 .form-group input:focus,
 .form-group input:valid,
@@ -755,6 +758,10 @@ fieldset {
 
   .md-l-box {
     padding: 2em;
+  }
+
+  .form-group textarea {
+    height: 4em;
   }
 }
 
