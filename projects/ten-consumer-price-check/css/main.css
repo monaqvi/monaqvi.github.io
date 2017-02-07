@@ -52,6 +52,9 @@ img.pure-img-responsive {
 .no-margin {
   margin: 0;
 }
+.content .extra-bottom-margin {
+  margin-bottom: 3em;
+}
 
 .m-box {
   padding: 1em;
@@ -659,12 +662,13 @@ fieldset {
 }
 
 .button {
+  display: inline-block;
   position: relative;
   background: currentColor;
   border: 1px solid currentColor;
   font-size: 1.1rem;
   color: #4f93ce;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   padding: 0.75em 3em;
   cursor: pointer;
   -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
