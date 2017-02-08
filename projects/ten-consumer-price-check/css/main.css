@@ -276,10 +276,6 @@ blockquote {
   z-index: 4;
 }
 
-#speak_with_remove_criteria {
-  display: none;
-}
-
 /* -- FORM -- */
 .pure-form {
   position: relative;
@@ -329,6 +325,7 @@ blockquote {
   content: 'Please answer this before submitting.';
   display: block;
   color: rgb(219, 68, 55);
+  font-weight: normal;
 } .tabordion div.invalid:after {
   content: 'Please pick atleast one answer.';
 }
@@ -366,7 +363,11 @@ blockquote {
 .pure-form .query-group > div {
   margin-bottom: 1.5em;
 }
-.pure-form #query-template {
+#query-template {
+  display: none;
+}
+
+#speak_with_remove_criteria {
   display: none;
 }
 
