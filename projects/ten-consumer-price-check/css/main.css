@@ -714,6 +714,19 @@ fieldset {
   outline: none;
 }
 
+.red.button {
+  background: #ce534f;
+  border: 1px solid #ce534f;
+  color: #ce4f4f;
+}
+.red.button::before {
+  background: #071017;
+  border: 50vh solid #671c1c;
+}
+.red.button:hover {
+  color: #b73232;
+}
+
 /* -- TYPEWRITER EFFECT -- */
 .typed-cursor {
     opacity: 1;
