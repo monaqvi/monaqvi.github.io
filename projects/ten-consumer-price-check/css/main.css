@@ -67,10 +67,6 @@ img.pure-img-responsive {
   padding-bottom: 0;
 }
 
-.float-left {
-  float: left;
-}
-
 .is-right {
   text-align: right;
 }
@@ -96,6 +92,16 @@ a.pure-button-primary {
   font-size: 125%;
   padding: 0.5em 2em;
   text-transform: uppercase;
+}
+
+div.float-left {
+  float: left;
+}
+div.float-right {
+  float: right;
+}
+div.clear-float {
+  clear: both;
 }
 
 .sm-fill {
@@ -268,6 +274,10 @@ blockquote {
   bottom: 0;
   width: 100%;
   z-index: 4;
+}
+
+#speak_with_remove_criteria {
+  display: none;
 }
 
 /* -- FORM -- */
